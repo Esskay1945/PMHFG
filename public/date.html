@@ -308,11 +308,11 @@
     }
 
     .yes:hover {
-      transform: scale(1.1) rotate(-3deg) !important;
+      transform: scale(1.1) !important;
     }
 
     .no:hover {
-      transform: scale(0.9) rotate(3deg) !important;
+      transform: scale(0.9) !important;
     }
 
     /* Glassmorphic Decor from for her */
@@ -769,7 +769,7 @@
             window.initFlowerEngineInTarget(canvas);
             setTimeout(() => {
               window.startFlowerGrowth(linkData.flowerType || 'rose', linkData.flowerColor || 'red');
-            }, 500);
+            }, 2000); // Increased delay for smoother transition
           }
         }, 50);
       }, 1000);
